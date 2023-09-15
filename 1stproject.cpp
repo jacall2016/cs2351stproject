@@ -28,16 +28,16 @@ class GlazerCalc
         //section 2.1 in the C# Programming Yellow
         double width, height, woodLength, glassArea;
         string widthString, heightString;
+        System.Console.Write("what is the length: ");
         widthString = Console.ReadLine();
         width = double.Parse(widthString);
+        System.Console.Write("what is the width: ");
         heightString = Console.ReadLine();
         height = double.Parse(heightString);
         woodLength = 2 * (width + height) * 3.25;
         glassArea = 2 * (width * height);
-        Console.WriteLine("The length of the wood is " +
-        woodLength + " feet");
-        Console.WriteLine("The area of the glass is " +
-        glassArea + " square metres");
+        System.Console.WriteLine($"The length of the wood is {woodLength} feet");
+        System.Console.WriteLine($"The area of the glass is {glassArea} square metres");
 
         Console.ReadKey();
 
